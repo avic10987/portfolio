@@ -1002,7 +1002,9 @@ p, h1, h2, h3 {
 
 @media (min-width: 40em) {
   .sfs__features__pics__landscape {
-    width: 600px;
+    width: 650px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 
