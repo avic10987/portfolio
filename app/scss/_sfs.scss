@@ -1,0 +1,72 @@
+.sfs {
+
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1440px;    
+    padding: 8rem 0px;
+
+    &__hero {
+        background-image: url(../../images/sfs_logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-size: 100%;
+
+        width: 100%;
+        height: 100vh;
+
+        @include breakpoint-down(small) {
+            height: 40vh;
+        }
+    }
+
+    &__contentWrapper {
+        padding: 5rem 9rem;
+        min-height: 90vh;
+
+        @include breakpoint-down(medium) {
+            padding: 2rem;
+        } 
+    }
+
+    &__features {
+        margin: 0 auto;
+        padding: 90px 0 30px;
+        text-align: center;
+        width: 70%;
+
+        &__subtitle {
+            font-size: 1.3rem;
+            padding: 1rem;
+        }
+
+        &__description {
+            line-height: 1.6;
+        }
+
+        &__pics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            &__landscape {
+                width: 300px;
+                padding: 40px 0;
+
+                @include breakpoint-up(medium) {
+                    width: 600px;
+                }
+            }
+
+            &__portrait {
+                width: 300px;
+                padding: 40px 0;
+                
+                @include breakpoint-up(medium) {
+                    width: auto;
+                    height: 500px;
+                }
+            }
+        }
+    }
+
+}

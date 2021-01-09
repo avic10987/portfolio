@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vic Adetola</title>
+    <link rel="stylesheet" href="../app/scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="fade-in-page">
+    
+    <header class="header">
+        
+        <div class="header__dropdown hide-for-desktop">
+            <a href="../index.html#work" class="dropdownLink"> work</a>
+            <a href="../index.html#about" class="dropdownLink">about</a>
+            <a href="../index.html#contact" class="dropdownLink">contact</a>
+        </div>
+        
+        <nav class="header__nav flex flex-jc-sb flex-ai-c">
+
+            <a href="../index.html" class="header__logo">
+                V A
+            </a>
+
+            <ul class="hide-for-mobile">
+                <li class="header__links">
+                    <a href="../index.html#work" class="header__link">
+                        Work
+                    </a>
+                </li>
+                <li class="header__links">
+                    <a href="../index.html#about" class="header__link">
+                        About
+                    </a>
+                </li>
+                <li class="header__links">
+                    <a href="../index.html#contact" class="header__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" id = "btnHamburger" class = "header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </nav>
+
+    </header>
+    
+    <section class="myWardrobe">
+        <div class="myWardrobe__hero"></div>
+
+        <div class="myWardrobe__contentWrapper">
+            <h1 class="tambers__title">
+                My Wardrobe
+                <a href="#" class="github"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+                </a>
+            </h1>
+            <p class="tambers__text">
+                My Wardrobe is <b>a wardrobe visualizer program built with Python and Tkinter.</b> I was initially inspired by <a href="https://youtu.be/IrZ58M8BgcA" target="_blank"><u>this video</u></a> of a simple closet automation program built with python. I browsed other existing wardrobe apps for further inspiration and decided to create <b>a program that helps me view/organize my entire wardrobe, logs my outfits, and hosts my moodboard for viewing.</b> The program also <b>connects to the openWeather API to display the current local weather</b> and <b>saves all changes to a local JSON file</b> so the program can be closed and re-run anytime. Overall, I found this to be a great exercise in Object Oriented Programing and coding fundamentals. 
+            </p>
+            
+
+            <div class="linebreak"></div>
+
+            <div class="myWardrobe__vidWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g-SnyUBwmHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="../app/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vic Adetola</title>
+    <link rel="stylesheet" href="./app/scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <header class="header">
+        
+        <div class="header__dropdown hide-for-desktop">
+            <a href="#work" class="dropdownLink"> work</a>
+            <a href="#about" class="dropdownLink">about</a>
+            <a href="#contact" class="dropdownLink">contact</a>
+        </div>
+        
+        <nav class="header__nav flex flex-jc-sb flex-ai-c">
+
+            <a href="#" class="header__logo">
+                V A
+            </a>
+
+            <ul class="hide-for-mobile">
+                <li class="header__links">
+                    <a href="#work" class="header__link">
+                        Work
+                    </a>
+                </li>
+                <li class="header__links">
+                    <a href="#about" class="header__link">
+                        About
+                    </a>
+                </li>
+                <li class="header__links">
+                    <a href="#contact" class="header__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" id = "btnHamburger" class = "header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="intro">
+        <div class="intro__txt">
+            <h1 class = "anim-typewriter">Hello, I'm Vic</h1>
+            <p class="fade-in-slow" >a web developer with art & design acumen looking to facilitate the creation of user-friendly, aesthetically pleasing websites.</p>
+        </div>
+    </section>
+    
+    <section class="work" id="work">
+        <div class="work__featured">
+            <div class="work__featured__grid">
+                <h3 class="work__featured__category">
+                    featured projects
+                </h3>
+                <a href="./pages/tambers.html" class="work__featured__thumbnail">
+                    <img src="./images/tambers_desktop_mocku2.png" alt="" >
+                </a>
+                <div class="work__featured__description">
+                    <h3 class="work__featured__description__title">
+                        Tamber's
+                    </h3>
+                    <p>Bringing a treasured, local community staple to life with a new logo, web design and creation, and email promotion.</p>
+                </div>
+
+                <span></span>
+                <a href="./pages/my_wardrobe.html" class="work__featured__thumbnail">
+                    <img src="./images/wardrobe_mockup.png" alt="" >
+                </a>
+                <div class="work__featured__description">
+                    <h3 class="work__featured__description__title">
+                        My Wardrobe
+                    </h3>
+                    <p>A wardrobe visualizer built with Python & Tkinter</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="work__other">
+            <div class="work__other__grid">
+                <div class="work__other__category">
+                    <h3>other projects</h3>
+                </div>
+                <div class="work__other__project flex flex-jc-sb">
+                    <div class="work__other__project__title">
+                        <a href="./pages/SFS.html">
+                            Spirit Fashion Show
+                        </a>
+                    </div>
+
+                    <div class="work__other__project__description">
+                        Brand definition, logo & website creation & design for local Pittsburgh fashion show.
+                    </div>
+                    <div class="work__other__project__softwares">
+                        <p class="work__other__project__software">Branding</p>
+                        <p class="work__other__project__software">Design</p>
+                        <p class="work__other__project__software">Marketing</p>
+                        <p class="work__other__project__software">Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="wrapper">
+        <div class="custom-shape-divider-bottom-1610136491">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <footer class="footer">
+        <section class="about" id="about">
+            <div class="about__overview">
+                <h3>
+                    about me -
+                </h3>
+                <p>
+                    As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my artistic discernment to create products that are both appealing to the eye and easy to use. My goal is to always build applications that are accessible and efficient while also being engaging and modern. I am interested in how web design can function as an extension of a brand's identity that flows seamlessly with its mission and ethos. 
+                    <br><br>
+                    Outside of sitting in front of my text editor, my other interest include fashion, music, and practicing holistic wellness. 
+                </p>
+            </div>
+
+            <div class="about__resume">
+                <div class="about__resume__education">
+                    <h3>education</h3>
+                    <p class="about__resume__education__school">Carnegie Mellon Universirty</p>
+                    <p>2016 - 2018</p> 
+                    <p>Bachelors of Global Systems and Management & Art</p>
+                </div>
+
+                
+                <div class="about__resume__skills">
+                    <h3>skills</h3>
+                    <div class="about__resume__skills__wrapper flex flex-jc-sb">
+                        <div class="about__resume__skills__column">
+                            <p>Languages</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS/SCSS</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+
+                        <div class="about__resume__skills__column">
+                            <p>Tools</p>
+                            <ul>
+                                <li>Bash</li>
+                                <li>Git+Github</li>
+                                <li>Chrome DevTools</li>
+                                <li>Parcel</li>
+                            </ul>
+                        </div>
+
+                        <div class="about__resume__skills__column">
+                            <p>Design</p>
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>InDesign</li>
+                                <li>Premiere</li>
+                                <li>Adobe XD</li>
+                            </ul>
+                        </div>
+
+                        <div class="about__resume__skills__column">
+                            <p>Other</p>
+                            <ul>
+                                <li>Spanish (Conversational)</li>
+                                <li>Design</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="about__resume__button"> Resume </a>
+            </div>
+        </section>
+        <div class="wrapper">
+            <div class="custom-shape-divider-top-1609381839">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <rect x="1200" height="3.6"></rect>
+                    <rect height="3.6"></rect>
+                    <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+        </div>
+        <section class="contact" id = "contact">
+            <div class="contact__title">
+                <h1>contact me</h1>
+            </div>
+            <form class="contact__form flex flex-jc-sb">
+                <input class="contact__input" type="text" placeholder="Your Name" required>
+                <input class="contact__input" type="text" placeholder="Your Email" required>
+                <textarea class="contact__input" placeholder="Your Message" required></textarea>
+                <input id="submit" type="submit" value="Send">
+            </form>
+        </section>
+    </footer>
+    
+
+    <script src="./app/js/app.js"></script>
+</body>
+</html>

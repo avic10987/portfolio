@@ -1,0 +1,64 @@
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+animation: fade-in 300ms ease-in-out forwards;
+}
+
+.fade-in-slow {
+    animation: fade-in 500ms ease-in-out forwards;
+    }
+
+.fade-in-page {
+    animation-delay: 1s;
+    animation: fade-in 500ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+from {
+    visibility: visible;
+    opacity: 1;
+}
+
+99% {
+    visibility: visible;
+    opacity: 0;
+}
+to {
+    visibility: hidden;
+    opacity: 0;
+}
+}
+
+.fade-out {
+animation: fade-out 300ms ease-in-out forwards;
+}
+
+
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 9.475rem;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: $offBlack;}
+    to{border-right-color: transparent;}
+  }

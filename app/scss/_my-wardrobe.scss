@@ -1,0 +1,46 @@
+.myWardrobe {
+
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1440px;    
+    padding: 8rem 0px;
+
+    &__hero {
+        background-image: url(../../images/myWardrobe_mockup2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-size: 100%;
+
+        width: 100%;
+        height: 100vh;
+
+        @include breakpoint-down(small) {
+            height: 40vh;
+        }
+    }
+
+    &__contentWrapper {
+        padding: 5rem 9rem;
+        min-height: 90vh;
+
+        @include breakpoint-down(medium) {
+            padding: 8rem 2rem;
+        }   
+    }
+
+    &__vidWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

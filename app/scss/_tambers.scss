@@ -1,0 +1,153 @@
+.tambers { 
+
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1440px;    
+    padding: 8rem 0px;
+
+
+    &__hero {
+        background-image: url(../../images/tambers_flat_devices-mockuo1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-size: 100%;
+
+        width: 100%;
+        height: 100vh;
+
+        @include breakpoint-down(small) {
+            height: 40vh;
+        }
+    }
+
+    &__contentWrapper {
+        padding: 5rem 9rem;
+        min-height: 90vh;
+
+        @include breakpoint-down(medium) {
+            padding: 8rem 2rem;
+        }        
+    }
+
+    &__title {
+        margin: 1rem 0;
+
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    &__text {
+        margin-bottom:1.625rem;
+
+        font-size: 1.2rem;
+        line-height: 1.6;
+
+        @include breakpoint-up(medium) {
+           width: 70%;
+        }
+    }
+
+    &__link {
+        padding: 7px .7rem;
+        
+        border: 2px solid $offBlack;
+        border-radius: 4px;
+        font-weight: 700;
+
+        transition: all 250ms ease-in-out;
+    }
+
+    &__link:hover {
+        background-color: $offBlack;
+        color: white !important;  
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+        
+    }
+
+    &__screenshots {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        @include breakpoint-down(medium) {
+            grid-template-columns: 1fr;
+        }
+        img {
+            justify-self: center;
+            height: 20rem;
+
+            @include breakpoint-down(medium) {
+                height: 10rem;
+            }
+        }
+    }
+
+    &__solution {
+        text-align: center;
+    }
+
+    &__feature {
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        @include breakpoint-down(small) {
+            grid-template-columns: 1fr;
+        }
+
+        &__thumbnail {
+            height: 270px;
+            justify-self: center;
+
+            @include breakpoint-down(medium) {
+                height: 10rem;
+            }
+        }
+
+        &__description {
+            text-align: left;
+        }
+
+        &__subtitle {
+            font-size: 1.425rem;
+            margin-bottom: .625rem;
+        }
+
+        &__text {
+            margin-bottom: 1.5rem;
+        }
+            
+    }
+
+}
+
+.linebreak {
+    margin: 100px auto;
+    height: .5px;
+    background-color: $offBlack;
+    width: 100%;
+}
+
+.github {
+    svg {
+        vertical-align: middle;
+        margin: 0 7px;
+        width: 35px;
+
+        fill: $offBlack;
+
+        transition: all 250ms ease-in-out;
+    }
+
+    svg:hover {
+        opacity: .7;
+    }
+}

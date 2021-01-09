@@ -1,0 +1,131 @@
+.header {
+    min-width: 100%;
+    position: absolute;
+
+    &__nav {
+        padding: 2rem 5rem;
+        position: relative;
+
+        @include breakpoint-down(medium) {
+            padding: 1rem 2rem;
+        }
+
+        color: rgb(87, 87, 87);
+    }
+
+    &__logo {
+        padding: 11px;
+
+        border: 2px solid;
+        border-radius: 21px;
+        font-size: 1rem;
+        font-weight: 800;
+
+        transition: all ease-in-out 200ms;
+    }
+
+    &__logo:hover {
+        background-color: $offBlack;
+        color: white;
+    }
+
+
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__links {
+        display: inline-block;
+    }
+
+    &__link {
+        padding-right: 1.745rem;
+        
+        font-weight: 600;
+        text-transform: lowercase;
+
+        transition: all ease-in-out 200ms;
+    }
+
+    &__link:hover {
+        color: black;
+    }
+
+
+///////////////////mobile styles/////////////////
+
+    &__dropdown {
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0px;
+        left: 0px;
+        right:0px;
+        visibility: hidden;
+        z-index: 1;
+
+        background-color: #ffffff;
+    
+        a {
+            display: block;
+            margin-bottom: 25px;
+            &:first-child {
+                margin-top: 200px;
+            }
+            text-align: center;
+    
+            
+            font-size: 1.075rem; 
+            font-weight: 700;
+            text-transform: lowercase;           
+        }
+
+    }
+
+
+    &__menu { 
+        z-index: 1;
+        > span {
+            display: block;
+            height: 2px;
+            transform-origin: 3px 1px;
+            width: 26px;
+            
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+            
+            background-color: $offBlack;
+            
+            transition: all ease-in-out 300ms;
+            
+        }
+      }
+
+    &.open { //hamburger on click animation (when header class wil change to "open")
+
+        .header__menu {
+
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+        
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .header__logo {
+            visibility: hidden;
+        }
+
+    }
+        
+}
+
